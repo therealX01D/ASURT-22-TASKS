@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .wrap{
+            display:flex;
+            flex-flow:column;
+            justify-content: center;
+            align-items: center;
+            
+            }
+        .header{
+            display:flex;
+            flex-flow:column;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+          
+        }
+        .header div{
+            display: flexbox;
+
+        }
+        .bigtext{
+            display:flexbox;
+            font-size:3em;
+        }
+        .tinyitalictext{
+            display: flexbox;
+            font-size: 1em;
+            font-style: italic;
+            color: gray;
+        }
+        .left{
+            min-width:50%;
+            line-height:2em;
+            display:flex;
+            justify-content: center;
+            flex-flow: column;
+            align-items: center;
+           
+        }
+        .left a{
+            text-decoration: none;
+           
+        }
+        .header:nth-child(2){
+            margin-top: 10px;
+            display:flex;
+            flex-flow: row;
+            flex-wrap:wrap;
+        }
+        .right{
+            min-width:50%;
+            display:flex;
+            flex-wrap:wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .txtbox{
+            height: 2.8em;
+            border:1px solid grey;
+            border-radius:0.15em;
+            padding-left: 0.5em;
+            
+        }
+        input[name="Name"]{
+            width:50%;
+        }
+        input[name="Email"]{
+            width:48%;
+            float:right;
+        }
+        .message{
+            margin-top:1em;
+            width:100%;
+        }
+        .sendbtn{
+            float:right;
+            margin-top:2.5em;
+            height:2.8em;
+            width:6em;
+            border:0;
+            background:black;
+            color:#ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class ="header">
+            <div class ="bigtext"> Contact us </div>
+            <div class ="tinyitalictext">Fan ? drop a note !</div>
+        </div>
+        <div class ="header">
+                <div class ="left">
+                    <div>
+                        <p> <i class="fas fa-map-marker-alt"></i>   Chicago USA</p>
+                        <p> <i class="fas fa-phone"></i>   Phone:+00 151515</p>
+                        <p> <i class="fas fa-envelope"></i>   Email:<a href="mailto:mail@mail.com">mail@mail.com</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <form action="get">
+                        <input type="text" name="Name" placeholder="Name" id="txt_Name"class="txtbox">
+                        <input type="text" name="Email" placeholder="Email" id="txt_Name"class="txtbox">
+                        <input type="text" name="Message" placeholder="Message" id="txt_Name"class="txtbox message">
+                        <input type="submit" value="SEND" class="sendbtn">
+                    </form>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
